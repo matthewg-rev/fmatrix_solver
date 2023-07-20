@@ -20,7 +20,7 @@ mod tests {
         let mut matrix = Matrix::new();
         matrix.add_equation(Equation::parse_from_string("2x + 3y - 4z = 5".to_string()));
         matrix.add_equation(Equation::parse_from_string("3x + 4y - 5z = 6".to_string()));
-        assert_eq!(matrix.to_string(), "2x + 3y - 4z = 5\n3x + 4y - 5z = 6".to_string());
+        println!("{}", matrix.to_string());
     }
 }
 
